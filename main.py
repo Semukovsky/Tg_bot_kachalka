@@ -95,7 +95,7 @@ def callback(call):
         info = ''
         users_counter = 0
         for n, el in enumerate(users_list):
-            info += f'(USER_{n + 1}:  Рост: {el[1]};\n Вес: {el[2]};\n id Пользователя: 186745 {random.randrange(1, 1000)})\n'
+            info += f'(USER_{n + 1}:  Рост: {el[1]};\n Вес: {el[2]};\n id Пользователя: 186745{random.randrange(1, 1000)})\n'
             users_counter += 1
     bot.send_message(call.message.chat.id, info)
     bot.send_message(call.message.chat.id, f'Всего этот бот использовало {len(users_list)} человек')
