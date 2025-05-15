@@ -5,7 +5,7 @@ import random
 import requests
 import json
 
-bot = telebot.TeleBot('7087078113:AAH60Sn3ksr61g17aPQSUNZ1wdWdO3NWLj4')
+bot = telebot.TeleBot()
 
 def help_handler(message):
     chat_id = message.chat.id
